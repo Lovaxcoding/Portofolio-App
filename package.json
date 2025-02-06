@@ -6,7 +6,7 @@
   "homepage": "https://LovaxCoding.github.io/Portofolio-App",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vite-plugin-gh-pages",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d build"
