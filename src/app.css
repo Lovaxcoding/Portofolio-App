@@ -1,0 +1,10 @@
+@import '@fontsource/Roboto';
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    
+}
+@tailwind base;
+@tailwnd components;
+@tailwind utilities
