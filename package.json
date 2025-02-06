@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://LovaxCoding.github.io/portofolio-app",
+  "homepage": "https://LovaxCoding.github.io/Portofolio-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build && vite-plugin-gh-pages",
