@@ -1,5 +1,7 @@
-export default function Services(){
+import ServicesContent from "../MainContent/ServicesContent"
+
+export default function Service(){
     return (
-        <div></div>
+        <ServicesContent />
     )
 }

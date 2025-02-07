@@ -9,7 +9,7 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/Portfolio" },
-    { name: "About", path: "/About" },
+    { name: "Services", path: "/Services" },
     { name: "Contact", path: "/Contact" },
   ];
 
@@ -22,14 +22,18 @@ export default function Navbar() {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         {/* Logo */}
-        <div className="flex lg:flex-1">
-          <NavLink to="/" className="-m-1.5 p-1.5">
+        <div className="flex relative lg:flex-1">
+          <NavLink
+            to="/"
+            className="-m-1.5 flex-row flex p-1.5 justify-center items-center"
+          >
             <span className="sr-only">Tsarasoa Production</span>
             <img
               alt="Logo"
-              src="../src/assets/LOGO tsarasoa.png"
-              className="h-8 invert w-auto"
+              src="/assets/images/LogoTSP.png"
+              className="h-20 pt-4 w-auto"
             />
+            <h5 className="text-white">Tsarasoa Production</h5>
           </NavLink>
         </div>
 
@@ -77,15 +81,19 @@ export default function Navbar() {
         className="lg:hidden"
       >
         <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <NavLink to="/" className="-m-1.5 p-1.5">
+            <NavLink
+              to="/"
+              className="-m-1.5 flex-row flex p-1.5 justify-center items-center"
+            >
               <span className="sr-only">Tsarasoa Production</span>
               <img
                 alt="Logo"
-                src="../src/assets/LOGO tsarasoa.png"
-                className="h-8 invert w-auto"
+                src="/assets/images/LogoTSP.png"
+                className="h-20 pt-4 w-auto"
               />
+              <h5 className="text-white">Tsarasoa Production</h5>
             </NavLink>
             <button
               type="button"
@@ -97,7 +105,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
+            <div className="-my-6 divide-y divide-gray-100/10">
               {/* Les liens du navigateur */}
               <div className="space-y-2 py-6">
                 {navigation.map((item) => (
@@ -107,8 +115,8 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `-mx-3 block rounded-lg px-3 py-2 text-base font-semibold ${
                         isActive
-                          ? "text-amber-600 bg-gray-100"
-                          : "text-gray-900 hover:bg-gray-50"
+                          ? "text-red-600 bg-gray-700"
+                          : "text-gray-100 hover:bg-gray-50"
                       }`
                     }
                   >

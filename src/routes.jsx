@@ -11,14 +11,14 @@ export default function AppRoutes() {
   const ROUTES = {
     HOME: "/",
     PORTFOLIO: "/portfolio",
-    ABOUT: "/about",
+    SERVICES: "/services",
     CONTACT: "/contact",
   };
 
   const navigation = [
     { name: "Home", path: ROUTES.HOME },
     { name: "Portfolio", path: ROUTES.PORTFOLIO },
-    { name: "About", path: ROUTES.ABOUT },
+    { name: "Services", path: ROUTES.SERVICES },
     { name: "Contact", path: ROUTES.CONTACT },
   ];
 
@@ -31,7 +31,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path={ROUTES.HOME} element={<Home />} />
         <Route path={ROUTES.PORTFOLIO} element={<Portfolio />} />
-        <Route path={ROUTES.ABOUT} element={<About />} />
+        <Route path={ROUTES.SERVICES} element={<Services />} />
         <Route path={ROUTES.CONTACT} element={<Contact />} />
       </Routes>
       <Footer />

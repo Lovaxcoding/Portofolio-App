@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Maincontent from '../MainContent/MainContent';
-import Services from '../MainContent/Services';
+import ServicesContent from '../MainContent/ServicesContent';
 
 
 export default function Home() {
@@ -8,8 +8,15 @@ export default function Home() {
 
   return (
     <main className="w-full h-auto">
+      {/* <div className="absolute right-0 w-full">
+        <img
+          src="/assets/images/bg2.jpeg"
+          alt=""
+          className="w-full h-screen brightness-50 object-cover -z-10 opacity-20"
+        />
+      </div> */}
       {/* hero */}
-      <div className="bg-black">
+      <div>
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div
             aria-hidden="true"
@@ -25,7 +32,7 @@ export default function Home() {
           </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-200 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+              <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-200 ring-1 ring-gray-200/10 hover:ring-gray-600/20">
                 What are we ? Here are the answer .{" "}
                 <a href="#" className="font-semibold text-sm text-red-500">
                   <span aria-hidden="true" className="absolute inset-0" />
@@ -34,10 +41,10 @@ export default function Home() {
               </div>
             </div>
             <div className="text-center">
-              <h1 className="text-9xl font-semibold tracking-tight text-balance text-gray-100 sm:text-7xl">
+              <h1 className="text-7xl font-semibold tracking-tight text-balance text-gray-100 sm:text-6xl">
                 Welcome Dear guest !
               </h1>
-              <p className="mt-8 text-lg font-medium text-pretty text-gray-100 sm:text-xl/8">
+              <p className="mt-8 text-lg font-medium text-pretty text-gray-100">
                 Bringing your vision to life with creativity, passion, and
                 excellence – Tsarasoa Production, where stories come alive!
               </p>
@@ -53,6 +60,13 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            {/* <div className="absolute sm:flex-none right-0 top-1/2">
+              <img
+                src="/assets/images/background1.png"
+                alt=""
+                className="w-18 h-96 brightness-90"
+              />
+            </div> */}
           </div>
           <div
             aria-hidden="true"
@@ -70,7 +84,7 @@ export default function Home() {
       </div>
       {/* section */}
       <Maincontent />
-      <Services />
+      <ServicesContent />
     </main>
   );
 }

@@ -4,8 +4,11 @@ export default function Maincontent() {
   return (
     <div className="bg-black text-white py-16 px-8">
       {/* Titre de la section */}
-      <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold">Why Choose Us?</h2>
+      <div className="text-center bg-black mb-12">
+        <h2 className="text-4xl py-4 font-extrabold">
+          Why Choose <span className="text-red-600 font-extrabold"> TS Production</span>{" "}
+          ?
+        </h2>
         <p className="text-gray-400 mt-2">
           Discover the values and achievements that set us apart.
         </p>
