@@ -53,7 +53,7 @@ export default function Navbar() {
               to={item.path}
               className={({ isActive }) =>
                 `text-sm font-semibold ${
-                  isActive ? "text-indigo-600" : "text-gray-900"
+                  isActive ? "text-red-600" : "text-gray-100"
                 }`
               }
             >
@@ -64,7 +64,7 @@ export default function Navbar() {
 
         {/* Log in button */}
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink to="/login" className="text-sm font-semibold text-gray-900">
+          <NavLink to="/login" className="text-sm font-semibold text-gray-100">
             Log in <span aria-hidden="true">&rarr;</span>
           </NavLink>
         </div>
@@ -107,7 +107,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `-mx-3 block rounded-lg px-3 py-2 text-base font-semibold ${
                         isActive
-                          ? "text-indigo-600 bg-gray-100"
+                          ? "text-amber-600 bg-gray-100"
                           : "text-gray-900 hover:bg-gray-50"
                       }`
                     }

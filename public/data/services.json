@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/images/shoe4.png",
+    "title": "Jord official",
+    "rating": 4.5,
+    "price": 79.99
+  },
+  {
+    "id": 2,
+    "image": "/assets/images/shoe5.png",
+    "title": "Nike Air Revo 2025",
+    "rating": 4.2,
+    "price": 149.99
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/shoe6.png",
+    "title": "Kyrie 2024 Pro",
+    "rating": 4.8,
+    "price": 39.99
+  },
+  {
+    "id": 4,
+    "image": "/assets/images/shoe7.png",
+    "title": "Converse All star",
+    "rating": 4.3,
+    "price": 59.99
+  }
+]
