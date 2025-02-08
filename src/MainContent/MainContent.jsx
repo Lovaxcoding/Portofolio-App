@@ -37,7 +37,7 @@ export default function Maincontent() {
         {/* Statistique : Nombre de projets */}
         <div className="flex flex-col items-center">
           <span className="text-4xl font-extrabold text-yellow-400 mb-2">
-            120+
+            50+
           </span>
           <h3 className="font-semibold text-lg">Projects Completed</h3>
           <p className="text-gray-400 mt-2">
@@ -47,7 +47,7 @@ export default function Maincontent() {
 
         {/* Statistique : Années d'expérience */}
         <div className="flex flex-col items-center">
-          <span className="text-4xl font-extrabold text-red-500 mb-2">10+</span>
+          <span className="text-4xl font-extrabold text-red-500 mb-2">5+</span>
           <h3 className="font-semibold text-lg">Years of Experience</h3>
           <p className="text-gray-400 mt-2">A decade of trusted services.</p>
         </div>
